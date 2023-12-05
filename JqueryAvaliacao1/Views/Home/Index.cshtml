@@ -1,0 +1,40 @@
+﻿@section Scripts {
+    <script src="~/js/jquery.mask.min.js"></script>
+    <script src="~/js/jquery.mask.models.js"></script>
+}
+
+<form id="frmCalc" class="row g-3" novalidate>
+    <div class="col-md-4">
+        <label for="txtValor1" class="form-label">Digite o primeiro Valor</label>
+        <input id="txtValor1" type="text" class="form-control " />
+        <div id="txtFeedValor1" class="invalid-feedback"></div>
+    </div>
+
+    <div class="col-md-4">
+        <label for="lblOperacao" class="form-label">Operação</label>
+        <select id="lblOperacao" class="form-select" required>
+            <option selected disabled>Selecione...</option>
+            <option value="1">/</option>
+            <option value="2">*</option>
+            <option value="3">-</option>
+            <option value="4">+</option>
+        </select>
+        <div id="txtoperacao" class="invalid-feedback"></div>
+    </div>
+
+    <div class="col-md-4">
+        <label for="txtValor2" class="form-label">Digite o segundo Valor</label>
+        <input id="txtValor2" type="text" class="form-control" />
+        <div id="txtFeedValor2" class="invalid-feedback"></div>
+    </div>
+
+    <div class="col-12">
+        <button id="btnCalculo" class="btn btn-primary" type="submit">Calculo</button>
+    </div>
+
+    <div class="col-md-4">
+        <label for="txtResultado" class="form-label">Resultado</label>
+        <input id="txtResultado" typr="text" class="form-control" readonly />
+    </div>
+
+</form>
